@@ -25,33 +25,6 @@ This system is designed to detect driver drowsiness using the **Eye Aspect Ratio
 ## 📂 Project Structure
 
 ```
-### 📄 Project Summary
-
-The Real-Time Fatigue Monitoring System is an integrated hardware-software solution designed to monitor user drowsiness and respond with an interactive verification challenge. It uses MediaPipe facial landmarks to compute the Eye Aspect Ratio (EAR) and detects prolonged eye closure. When drowsiness is detected, the system issues a joystick-based awareness activity (Arduino) to verify alertness and logs events to a CSV.
-
----
-
-# 🛡️ Real-Time Fatigue Monitoring System
-
-An AI-driven safety interface combining Computer Vision and Hardware-in-the-Loop (HIL) feedback.
-
-## 📌 Project Overview
-
-Detects driver drowsiness using the Eye Aspect Ratio (EAR). If EAR remains below the configured threshold, an Awareness Activity requires the user to move an Arduino joystick (UP/DOWN/LEFT/RIGHT) within a timeout to silence the alarm.
-
-### Key Features
-
-- Facial landmark tracking using MediaPipe.
-- Time-based detection (seconds) to avoid CPU-dependent behavior.
-- Hardware challenge-response via Arduino joystick.
-- CSV logging of events, reaction times, and durations.
-- Cross-platform relative path usage.
-
----
-
-## 📂 Project Structure
-
-```
 Fatigue-Monitor/
 ├── README.md
 ├── requirements.txt
@@ -134,5 +107,3 @@ Note: `control-data/` and `outputs/` are ignored by `.gitignore` and are not inc
 This repository includes an `LICENSE` file (MIT) — see `LICENSE` for details.
 
 ---
-
-If you'd like, I can also add a short `CONTRIBUTING.md` or CI workflow next.
